@@ -21,8 +21,8 @@ Given a route and platform, automatically inserts FW fingerprints from the platf
 
 Example:
 ```bash
-> python tools/car_porting/auto_fingerprint.py '1bbe6bf2d62f58a8|2022-07-14--17-11-43' 'SUBARU OUTBACK 6TH GEN'
-Attempting to add fw version for:  SUBARU OUTBACK 6TH GEN
+> python3 tools/car_porting/auto_fingerprint.py '1bbe6bf2d62f58a8|2022-07-14--17-11-43' 'OUTBACK'
+Attempting to add fw version for:  OUTBACK
 ```
 
 ### [selfdrive/car/tests/test_car_interfaces.py](/selfdrive/car/tests/test_car_interfaces.py)
@@ -45,7 +45,7 @@ Given a route, runs most of the car interface to check for common errors like mi
 
 #### Example: panda safety mismatch for gasPressed
 ```bash
-> python tools/car_porting/test_car_model.py '4822a427b188122a|2023-08-14--16-22-21'
+> python3 tools/car_porting/test_car_model.py '4822a427b188122a|2023-08-14--16-22-21'
 
 =====================================================================
 FAIL: test_panda_safety_carstate (__main__.CarModelTestCase.test_panda_safety_carstate)
